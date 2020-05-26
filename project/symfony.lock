@@ -113,6 +113,18 @@
     "fig/link-util": {
         "version": "1.1.1"
     },
+    "jane-php/json-schema": {
+        "version": "5.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "5.0",
+            "ref": "b3170e100a4eb30b4114ff3d926fad06cf923d7e"
+        }
+    },
+    "jane-php/json-schema-runtime": {
+        "version": "v6.0.0"
+    },
     "laminas/laminas-code": {
         "version": "3.4.1"
     },
@@ -121,6 +133,12 @@
     },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.0.4"
+    },
+    "league/uri": {
+        "version": "6.2.1"
+    },
+    "league/uri-interfaces": {
+        "version": "2.1.0"
     },
     "nelmio/cors-bundle": {
         "version": "1.5",
@@ -134,6 +152,9 @@
             "config/packages/nelmio_cors.yaml"
         ]
     },
+    "nikic/php-parser": {
+        "version": "v4.4.0"
+    },
     "ocramius/package-versions": {
         "version": "1.5.1"
     },
@@ -142,6 +163,9 @@
     },
     "php": {
         "version": "7.4"
+    },
+    "php-jsonpointer/php-jsonpointer": {
+        "version": "v3.0.2"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.1.0"
@@ -160,6 +184,9 @@
     },
     "psr/event-dispatcher": {
         "version": "1.0.0"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
     },
     "psr/link": {
         "version": "1.0.0"
@@ -261,6 +288,9 @@
         "version": "v5.0.8"
     },
     "symfony/mime": {
+        "version": "v5.0.8"
+    },
+    "symfony/options-resolver": {
         "version": "v5.0.8"
     },
     "symfony/polyfill-intl-idn": {

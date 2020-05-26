@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "brewer": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    }
+  }
+}
