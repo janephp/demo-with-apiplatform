@@ -1,14 +1,44 @@
 {
-  "type": "object",
-  "properties": {
-    "name": {
-      "type": "string"
+  "definitions": {
+    "BeerOutput": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "brewer": {
+          "type": "string"
+        }
+      }
     },
-    "brewer": {
-      "type": "string"
-    },
-    "country": {
-      "type": "string"
+    "BeerInput": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": ["integer", "null"]
+        },
+        "name": {
+          "type": "string"
+        },
+        "brewer": {
+          "type": "string"
+        },
+        "style": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "integer"
+        },
+        "alcohol": {
+          "type": "integer"
+        },
+        "country": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        }
+      }
     }
   }
 }

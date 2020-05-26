@@ -39,9 +39,6 @@ class BeerOutputNormalizer implements DenormalizerInterface, NormalizerInterface
         if (\array_key_exists('brewer', $data)) {
             $object->setBrewer($data['brewer']);
         }
-        if (\array_key_exists('country', $data)) {
-            $object->setCountry($data['country']);
-        }
         return $object;
     }
     public function normalize($object, $format = null, array $context = array())
@@ -52,9 +49,6 @@ class BeerOutputNormalizer implements DenormalizerInterface, NormalizerInterface
         }
         if (null !== $object->getBrewer()) {
             $data['brewer'] = $object->getBrewer();
-        }
-        if (null !== $object->getCountry()) {
-            $data['country'] = $object->getCountry();
         }
         return $data;
     }

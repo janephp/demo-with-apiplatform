@@ -19,12 +19,6 @@ class BeerOutput
     /**
      * 
      *
-     * @var string
-     */
-    protected $country;
-    /**
-     * 
-     *
      * @return string
      */
     public function getName() : string
@@ -62,27 +56,6 @@ class BeerOutput
     public function setBrewer(string $brewer) : self
     {
         $this->brewer = $brewer;
-        return $this;
-    }
-    /**
-     * 
-     *
-     * @return string
-     */
-    public function getCountry() : string
-    {
-        return $this->country;
-    }
-    /**
-     * 
-     *
-     * @param string $country
-     *
-     * @return self
-     */
-    public function setCountry(string $country) : self
-    {
-        $this->country = $country;
         return $this;
     }
 }

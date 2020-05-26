@@ -4,10 +4,8 @@ namespace App\Entity;
 
 use App\Repository\BeerRepository;
 use Doctrine\ORM\Mapping as ORM;
-use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
- * @ApiResource
  * @ORM\Entity(repositoryClass=BeerRepository::class)
  */
 class Beer
@@ -57,6 +55,13 @@ class Beer
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function setId(?int $id): self
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
     public function getStyle(): ?string
