@@ -113,6 +113,9 @@
     "fig/link-util": {
         "version": "1.1.1"
     },
+    "jane-php/automapper": {
+        "version": "v6.0.0"
+    },
     "jane-php/json-schema": {
         "version": "5.0",
         "recipe": {
@@ -293,13 +296,22 @@
     "symfony/options-resolver": {
         "version": "v5.0.8"
     },
+    "symfony/polyfill-intl-grapheme": {
+        "version": "v1.17.0"
+    },
     "symfony/polyfill-intl-idn": {
+        "version": "v1.17.0"
+    },
+    "symfony/polyfill-intl-normalizer": {
         "version": "v1.17.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.17.0"
     },
     "symfony/polyfill-php73": {
+        "version": "v1.17.0"
+    },
+    "symfony/polyfill-php80": {
         "version": "v1.17.0"
     },
     "symfony/property-access": {
@@ -354,6 +366,9 @@
     },
     "symfony/stopwatch": {
         "version": "v5.0.8"
+    },
+    "symfony/string": {
+        "version": "v5.1.0-rc2"
     },
     "symfony/translation-contracts": {
         "version": "v2.0.1"

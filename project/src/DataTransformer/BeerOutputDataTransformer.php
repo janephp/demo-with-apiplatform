@@ -5,9 +5,17 @@ namespace App\DataTransformer;
 use ApiPlatform\Core\DataTransformer\DataTransformerInterface;
 use App\Entity\Beer;
 use Generated\Model\BeerOutput;
+use Jane\AutoMapper\AutoMapperInterface;
 
 class BeerOutputDataTransformer implements DataTransformerInterface
 {
+    private AutoMapperInterface $autoMapper;
+
+    public function __construct(AutoMapperInterface $autoMapper)
+    {
+        $this->autoMapper = $autoMapper;
+    }
+
     /**
      * @param Beer $data
      *
@@ -15,11 +23,7 @@ class BeerOutputDataTransformer implements DataTransformerInterface
      */
     public function transform($data, string $to, array $context = [])
     {
-        $output = new BeerOutput();
-        $output->setName($data->getName());
-        $output->setBrewer($data->getBrewer());
-
-        return $output;
+        return $this->autoMapper->map($data, BeerOutput::class, $context);
     }
 
     /**

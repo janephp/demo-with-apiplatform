@@ -45,26 +45,89 @@ class BeerInputNormalizer implements DenormalizerInterface, NormalizerInterface,
         elseif (\array_key_exists('id', $data) && $data['id'] === null) {
             $object->setId(null);
         }
-        if (\array_key_exists('name', $data)) {
-            $object->setName($data['name']);
+        if (\array_key_exists('name', $data) && $data['name'] !== null) {
+            $value_1 = $data['name'];
+            if (is_string($data['name'])) {
+                $value_1 = $data['name'];
+            } elseif (is_null($data['name'])) {
+                $value_1 = $data['name'];
+            }
+            $object->setName($value_1);
         }
-        if (\array_key_exists('brewer', $data)) {
-            $object->setBrewer($data['brewer']);
+        elseif (\array_key_exists('name', $data) && $data['name'] === null) {
+            $object->setName(null);
         }
-        if (\array_key_exists('style', $data)) {
-            $object->setStyle($data['style']);
+        if (\array_key_exists('brewer', $data) && $data['brewer'] !== null) {
+            $value_2 = $data['brewer'];
+            if (is_string($data['brewer'])) {
+                $value_2 = $data['brewer'];
+            } elseif (is_null($data['brewer'])) {
+                $value_2 = $data['brewer'];
+            }
+            $object->setBrewer($value_2);
         }
-        if (\array_key_exists('volume', $data)) {
-            $object->setVolume($data['volume']);
+        elseif (\array_key_exists('brewer', $data) && $data['brewer'] === null) {
+            $object->setBrewer(null);
         }
-        if (\array_key_exists('alcohol', $data)) {
-            $object->setAlcohol($data['alcohol']);
+        if (\array_key_exists('style', $data) && $data['style'] !== null) {
+            $value_3 = $data['style'];
+            if (is_string($data['style'])) {
+                $value_3 = $data['style'];
+            } elseif (is_null($data['style'])) {
+                $value_3 = $data['style'];
+            }
+            $object->setStyle($value_3);
         }
-        if (\array_key_exists('country', $data)) {
-            $object->setCountry($data['country']);
+        elseif (\array_key_exists('style', $data) && $data['style'] === null) {
+            $object->setStyle(null);
         }
-        if (\array_key_exists('color', $data)) {
-            $object->setColor($data['color']);
+        if (\array_key_exists('volume', $data) && $data['volume'] !== null) {
+            $value_4 = $data['volume'];
+            if (is_int($data['volume'])) {
+                $value_4 = $data['volume'];
+            } elseif (is_null($data['volume'])) {
+                $value_4 = $data['volume'];
+            }
+            $object->setVolume($value_4);
+        }
+        elseif (\array_key_exists('volume', $data) && $data['volume'] === null) {
+            $object->setVolume(null);
+        }
+        if (\array_key_exists('alcohol', $data) && $data['alcohol'] !== null) {
+            $value_5 = $data['alcohol'];
+            if (is_int($data['alcohol'])) {
+                $value_5 = $data['alcohol'];
+            } elseif (is_null($data['alcohol'])) {
+                $value_5 = $data['alcohol'];
+            }
+            $object->setAlcohol($value_5);
+        }
+        elseif (\array_key_exists('alcohol', $data) && $data['alcohol'] === null) {
+            $object->setAlcohol(null);
+        }
+        if (\array_key_exists('country', $data) && $data['country'] !== null) {
+            $value_6 = $data['country'];
+            if (is_string($data['country'])) {
+                $value_6 = $data['country'];
+            } elseif (is_null($data['country'])) {
+                $value_6 = $data['country'];
+            }
+            $object->setCountry($value_6);
+        }
+        elseif (\array_key_exists('country', $data) && $data['country'] === null) {
+            $object->setCountry(null);
+        }
+        if (\array_key_exists('color', $data) && $data['color'] !== null) {
+            $value_7 = $data['color'];
+            if (is_string($data['color'])) {
+                $value_7 = $data['color'];
+            } elseif (is_null($data['color'])) {
+                $value_7 = $data['color'];
+            }
+            $object->setColor($value_7);
+        }
+        elseif (\array_key_exists('color', $data) && $data['color'] === null) {
+            $object->setColor(null);
         }
         return $object;
     }
@@ -78,27 +141,55 @@ class BeerInputNormalizer implements DenormalizerInterface, NormalizerInterface,
             $value = $object->getId();
         }
         $data['id'] = $value;
-        if (null !== $object->getName()) {
-            $data['name'] = $object->getName();
+        $value_1 = $object->getName();
+        if (is_string($object->getName())) {
+            $value_1 = $object->getName();
+        } elseif (is_null($object->getName())) {
+            $value_1 = $object->getName();
         }
-        if (null !== $object->getBrewer()) {
-            $data['brewer'] = $object->getBrewer();
+        $data['name'] = $value_1;
+        $value_2 = $object->getBrewer();
+        if (is_string($object->getBrewer())) {
+            $value_2 = $object->getBrewer();
+        } elseif (is_null($object->getBrewer())) {
+            $value_2 = $object->getBrewer();
         }
-        if (null !== $object->getStyle()) {
-            $data['style'] = $object->getStyle();
+        $data['brewer'] = $value_2;
+        $value_3 = $object->getStyle();
+        if (is_string($object->getStyle())) {
+            $value_3 = $object->getStyle();
+        } elseif (is_null($object->getStyle())) {
+            $value_3 = $object->getStyle();
         }
-        if (null !== $object->getVolume()) {
-            $data['volume'] = $object->getVolume();
+        $data['style'] = $value_3;
+        $value_4 = $object->getVolume();
+        if (is_int($object->getVolume())) {
+            $value_4 = $object->getVolume();
+        } elseif (is_null($object->getVolume())) {
+            $value_4 = $object->getVolume();
         }
-        if (null !== $object->getAlcohol()) {
-            $data['alcohol'] = $object->getAlcohol();
+        $data['volume'] = $value_4;
+        $value_5 = $object->getAlcohol();
+        if (is_int($object->getAlcohol())) {
+            $value_5 = $object->getAlcohol();
+        } elseif (is_null($object->getAlcohol())) {
+            $value_5 = $object->getAlcohol();
         }
-        if (null !== $object->getCountry()) {
-            $data['country'] = $object->getCountry();
+        $data['alcohol'] = $value_5;
+        $value_6 = $object->getCountry();
+        if (is_string($object->getCountry())) {
+            $value_6 = $object->getCountry();
+        } elseif (is_null($object->getCountry())) {
+            $value_6 = $object->getCountry();
         }
-        if (null !== $object->getColor()) {
-            $data['color'] = $object->getColor();
+        $data['country'] = $value_6;
+        $value_7 = $object->getColor();
+        if (is_string($object->getColor())) {
+            $value_7 = $object->getColor();
+        } elseif (is_null($object->getColor())) {
+            $value_7 = $object->getColor();
         }
+        $data['color'] = $value_7;
         return $data;
     }
 }

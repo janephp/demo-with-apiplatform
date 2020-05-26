@@ -1,10 +1,3 @@
-#jane_auto_mapper:
-#  private: true
-#  autoregister: true
-#  mappings:
-#    - source: App\Entity\Beer
-#      target: Generated\Model\Beer
-
 services:
   _defaults:
     autowire: true

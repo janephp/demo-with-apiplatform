@@ -13,43 +13,43 @@ class BeerInput
     /**
      * 
      *
-     * @var string
+     * @var string|null
      */
     protected $name;
     /**
      * 
      *
-     * @var string
+     * @var string|null
      */
     protected $brewer;
     /**
      * 
      *
-     * @var string
+     * @var string|null
      */
     protected $style;
     /**
      * 
      *
-     * @var int
+     * @var int|null
      */
     protected $volume;
     /**
      * 
      *
-     * @var int
+     * @var int|null
      */
     protected $alcohol;
     /**
      * 
      *
-     * @var string
+     * @var string|null
      */
     protected $country;
     /**
      * 
      *
-     * @var string
+     * @var string|null
      */
     protected $color;
     /**
@@ -76,20 +76,20 @@ class BeerInput
     /**
      * 
      *
-     * @return string
+     * @return string|null
      */
-    public function getName() : string
+    public function getName() : ?string
     {
         return $this->name;
     }
     /**
      * 
      *
-     * @param string $name
+     * @param string|null $name
      *
      * @return self
      */
-    public function setName(string $name) : self
+    public function setName(?string $name) : self
     {
         $this->name = $name;
         return $this;
@@ -97,20 +97,20 @@ class BeerInput
     /**
      * 
      *
-     * @return string
+     * @return string|null
      */
-    public function getBrewer() : string
+    public function getBrewer() : ?string
     {
         return $this->brewer;
     }
     /**
      * 
      *
-     * @param string $brewer
+     * @param string|null $brewer
      *
      * @return self
      */
-    public function setBrewer(string $brewer) : self
+    public function setBrewer(?string $brewer) : self
     {
         $this->brewer = $brewer;
         return $this;
@@ -118,20 +118,20 @@ class BeerInput
     /**
      * 
      *
-     * @return string
+     * @return string|null
      */
-    public function getStyle() : string
+    public function getStyle() : ?string
     {
         return $this->style;
     }
     /**
      * 
      *
-     * @param string $style
+     * @param string|null $style
      *
      * @return self
      */
-    public function setStyle(string $style) : self
+    public function setStyle(?string $style) : self
     {
         $this->style = $style;
         return $this;
@@ -139,20 +139,20 @@ class BeerInput
     /**
      * 
      *
-     * @return int
+     * @return int|null
      */
-    public function getVolume() : int
+    public function getVolume() : ?int
     {
         return $this->volume;
     }
     /**
      * 
      *
-     * @param int $volume
+     * @param int|null $volume
      *
      * @return self
      */
-    public function setVolume(int $volume) : self
+    public function setVolume(?int $volume) : self
     {
         $this->volume = $volume;
         return $this;
@@ -160,20 +160,20 @@ class BeerInput
     /**
      * 
      *
-     * @return int
+     * @return int|null
      */
-    public function getAlcohol() : int
+    public function getAlcohol() : ?int
     {
         return $this->alcohol;
     }
     /**
      * 
      *
-     * @param int $alcohol
+     * @param int|null $alcohol
      *
      * @return self
      */
-    public function setAlcohol(int $alcohol) : self
+    public function setAlcohol(?int $alcohol) : self
     {
         $this->alcohol = $alcohol;
         return $this;
@@ -181,20 +181,20 @@ class BeerInput
     /**
      * 
      *
-     * @return string
+     * @return string|null
      */
-    public function getCountry() : string
+    public function getCountry() : ?string
     {
         return $this->country;
     }
     /**
      * 
      *
-     * @param string $country
+     * @param string|null $country
      *
      * @return self
      */
-    public function setCountry(string $country) : self
+    public function setCountry(?string $country) : self
     {
         $this->country = $country;
         return $this;
@@ -202,20 +202,20 @@ class BeerInput
     /**
      * 
      *
-     * @return string
+     * @return string|null
      */
-    public function getColor() : string
+    public function getColor() : ?string
     {
         return $this->color;
     }
     /**
      * 
      *
-     * @param string $color
+     * @param string|null $color
      *
      * @return self
      */
-    public function setColor(string $color) : self
+    public function setColor(?string $color) : self
     {
         $this->color = $color;
         return $this;
