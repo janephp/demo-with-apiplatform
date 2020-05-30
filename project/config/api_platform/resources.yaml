@@ -1,5 +1,4 @@
 resources:
   App\Entity\Beer:
     attributes:
-      input: Generated\Model\BeerInput
       output: Generated\Model\BeerOutput
